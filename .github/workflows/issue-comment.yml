@@ -1,15 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 name: git comment
 on:
-  pull_request:
   issues:
   push:
     types: [open_issues]
 
 jobs:
-  comment:
-    if: github.event_name == ‘pull_request’ || github.event_name == ‘issues’
-    runs-on: ubuntu-latest
+  comment: 
+    runs-on: ‘issues’
     steps:
       - name: Add git comment
         uses: Marta83/funny-comment-action@v2.1

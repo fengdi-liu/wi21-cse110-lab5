@@ -8,7 +8,7 @@ on:
 
 jobs:
   comment:
-    if: “github.event_name == ‘pull requests’ || “github.event_name == ‘issues’
+    if: github.event_name == ‘pull requests’ || github.event_name == ‘issues’
     runs-on: ubuntu-latest
     steps:
       - name: Add git comment

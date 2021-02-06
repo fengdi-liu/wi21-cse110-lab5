@@ -1,8 +1,8 @@
 # This is a basic workflow to help you get started with Actions
-name: git comment
+name: "git comment"
 on:
   issues:
-    types: [open_issues]
+    types: [opened]
 
 jobs:
   comment: 
